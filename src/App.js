@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+const Link = ({ title, to }) => (
+  <li>
+    <a href={to} title={title}>
+      {title}
+    </a>
+  </li>
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ marginLeft: '1rem' }}>
+      <h1>SO/Infra</h1>
+      <ul>
+        <Link title="Outlook" to="https://outlook.com/startout.org.au" />
+        <Link title="Azure" to="https://portal.azure.com/startout.org.au" />
+        <Link title="Talk App" to="https://talk.startout.org.au" />
+        <Link title="Homepage (DEV)" to="https://homepage.dev.soinfra.xyz" />
+        <Link title="Homepage (PROD)" to="https://www.startout.org.au" />
+        <Link title="Workplace" to="https://startout.workplace.com" />
+      </ul>
     </div>
   );
 }
