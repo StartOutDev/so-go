@@ -19,7 +19,10 @@ function App() {
         <Link title="Homepage (PROD)" to="https://www.startout.org.au" />
         <Link title="Outlook" to="https://outlook.com/startout.org.au" />
         <Link title="Talk App" to="https://talk.startout.org.au" />
-        <Link title="Workplace" to="https://startout.workplace.com" />
+        <Link
+          title="Workplace"
+          to="https://auth.startout.org.au/samlp/9yIPyhfWgwoAGO1TmxFyVOMQtft3pfbs"
+        />
       </ul>
     </div>
   );
